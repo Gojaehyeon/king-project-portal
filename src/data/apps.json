@@ -1,16 +1,16 @@
 [
   {
-    "slug": "kikey",
-    "title": "Kikey",
-    "description": "Cute keyboard sound app for Mac. Type happily, work calmly.",
+    "slug": "knocker",
+    "title": "Knocker",
+    "description": "Tap your MacBook palmrest to fire hotkeys. Menu bar app on the Apple Silicon MEMS IMU.",
     "platform": "macos",
-    "repoUrl": "https://github.com/Gojaehyeon/kikey",
-    "thumbnail": "/thumbs/kikey.png",
+    "repoUrl": "https://github.com/Gojaehyeon/knocker",
+    "thumbnail": "/thumbs/knocker.png",
     "tags": [
-      "Swift"
+      "Go"
     ],
     "featured": false,
-    "createdAt": "2026-04-13T06:12:13Z"
+    "createdAt": "2026-04-15T06:10:59Z"
   },
   {
     "slug": "seismo",
@@ -52,6 +52,19 @@
     "createdAt": "2026-04-27T09:03:49Z"
   },
   {
+    "slug": "kikey",
+    "title": "Kikey",
+    "description": "Cute keyboard sound app for Mac. Type happily, work calmly.",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/kikey",
+    "thumbnail": "/thumbs/kikey.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-13T06:12:13Z"
+  },
+  {
     "slug": "handvox",
     "title": "Handvox",
     "description": "Browser vocal harmoniser conducted with both hands through your webcam — diatonic jazz stacks over a selected key, no install.",
@@ -64,19 +77,6 @@
     ],
     "featured": false,
     "createdAt": "2026-04-22T15:50:10Z"
-  },
-  {
-    "slug": "knocker",
-    "title": "Knocker",
-    "description": "Tap your MacBook palmrest to fire hotkeys. Menu bar app on the Apple Silicon MEMS IMU.",
-    "platform": "macos",
-    "repoUrl": "https://github.com/Gojaehyeon/knocker",
-    "thumbnail": "/thumbs/knocker.png",
-    "tags": [
-      "Go"
-    ],
-    "featured": false,
-    "createdAt": "2026-04-15T06:10:59Z"
   },
   {
     "slug": "bang-zombie",

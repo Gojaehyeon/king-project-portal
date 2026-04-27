@@ -26,12 +26,12 @@ export function AppCard({ app }: { app: App }) {
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent" />
         {app.featured && (
-          <span className="absolute left-3 top-3 rounded-full bg-amber-400 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-950 ring-1 ring-amber-500">
+          <span className="absolute left-3 top-3 rounded-full bg-zinc-100 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-zinc-950">
             Featured
           </span>
         )}
         <span
-          className={`absolute right-3 top-3 rounded-full px-2 py-0.5 text-[10px] font-semibold ring-1 ${PLATFORM_ACCENT[app.platform]}`}
+          className={`absolute right-3 top-3 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider backdrop-blur ring-1 ${PLATFORM_ACCENT[app.platform]}`}
         >
           {PLATFORM_LABEL[app.platform]}
         </span>
@@ -72,7 +72,7 @@ export function AppCard({ app }: { app: App }) {
             href={primaryHref}
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex h-9 flex-1 items-center justify-center rounded-lg bg-emerald-500 px-3 text-sm font-medium text-emerald-950 transition-colors hover:bg-emerald-400 active:bg-emerald-600"
+            className="inline-flex h-9 flex-1 items-center justify-center rounded-lg bg-zinc-100 px-3 text-sm font-medium text-zinc-950 transition-colors hover:bg-white active:bg-zinc-300"
           >
             {primaryLabel}
           </a>

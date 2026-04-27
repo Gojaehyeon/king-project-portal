@@ -133,12 +133,12 @@ async function captureScreenshot(url, outPath) {
   }
 }
 
-// Platform-tinted gradient palette for fallback cards
+// Monochrome gradient palette — slight tonal differentiation per platform
 const PLATFORM_GRADIENT = {
-  web: ["#022c22", "#10b981"],
-  macos: ["#0c2540", "#0ea5e9"],
-  ios: ["#1f1147", "#a855f7"],
-  other: ["#18181b", "#52525b"],
+  web: ["#0a0a0b", "#3f3f46"],
+  macos: ["#09090b", "#52525b"],
+  ios: ["#050507", "#27272a"],
+  other: ["#18181b", "#3f3f46"],
 };
 
 async function renderFallbackCard(outPath, info) {
@@ -148,12 +148,12 @@ async function renderFallbackCard(outPath, info) {
     s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const html = `<!doctype html><html><head><meta charset="utf-8"><style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{width:1280px;height:800px;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Apple SD Gothic Neo,sans-serif;background:linear-gradient(135deg,${from} 0%,${to} 100%);color:#fff;padding:96px 88px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
-    body::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 0%,rgba(255,255,255,.12),transparent 50%)}
-    .badge{position:absolute;top:64px;left:88px;font-size:18px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.72)}
-    .platform{position:absolute;top:64px;right:88px;font-size:14px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);background:rgba(255,255,255,.08);padding:8px 16px;border-radius:999px;backdrop-filter:blur(4px)}
-    h1{font-size:108px;font-weight:700;line-height:1.04;letter-spacing:-.03em;margin-bottom:36px;position:relative}
-    p{font-size:30px;line-height:1.4;color:rgba(255,255,255,.78);max-width:1000px;position:relative;font-weight:400}
+    body{width:1280px;height:800px;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Apple SD Gothic Neo,sans-serif;background:linear-gradient(135deg,${from} 0%,${to} 100%);color:#fafafa;padding:96px 88px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+    body::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 0%,rgba(255,255,255,.06),transparent 55%)}
+    .badge{position:absolute;top:64px;left:88px;font-size:18px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+    .platform{position:absolute;top:64px;right:88px;font-size:14px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.7);background:rgba(255,255,255,.06);padding:8px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.12)}
+    h1{font-size:108px;font-weight:700;line-height:1.04;letter-spacing:-.03em;margin-bottom:36px;position:relative;color:#fafafa}
+    p{font-size:30px;line-height:1.4;color:rgba(250,250,250,.7);max-width:1000px;position:relative;font-weight:400}
   </style></head><body>
     <div class="badge">TNT Labs · Daily</div>
     <div class="platform">${escapeHtml(info.platformLabel)}</div>

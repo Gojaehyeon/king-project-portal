@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col px-4 pb-24 pt-12 sm:px-6 sm:pt-16 lg:px-8">
       <header className="mb-10 sm:mb-14">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-400">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-zinc-500">
           TNT Labs · Daily Vibe-Coded
         </p>
         <h1 className="text-3xl font-semibold leading-tight tracking-tight text-zinc-50 sm:text-5xl">

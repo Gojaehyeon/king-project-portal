@@ -22,8 +22,8 @@ export function PortalGrid({ apps }: { apps: App[] }) {
 
   return (
     <>
-      <div className="sticky top-0 z-10 -mx-4 mb-6 border-b border-white/5 bg-zinc-950/80 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
-        <div className="flex gap-2 overflow-x-auto scrollbar-none">
+      <div className="sticky top-0 z-10 -mx-4 mb-6 border-b border-white/5 bg-zinc-950/85 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+        <div className="flex flex-wrap gap-2">
           {FILTERS.map((f) => {
             const label = f === "all" ? "전체" : PLATFORM_LABEL[f];
             const count = counts[f] ?? 0;
@@ -34,14 +34,14 @@ export function PortalGrid({ apps }: { apps: App[] }) {
                 key={f}
                 type="button"
                 onClick={() => setFilter(f)}
-                className={`shrink-0 rounded-full px-3.5 py-1.5 text-sm font-medium ring-1 transition-colors ${
+                className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium ring-1 transition-colors ${
                   active
-                    ? "bg-emerald-500 text-emerald-950 ring-emerald-400"
-                    : "bg-white/5 text-zinc-300 ring-white/10 hover:bg-white/10"
+                    ? "bg-zinc-100 text-zinc-950 ring-zinc-100"
+                    : "bg-white/[0.04] text-zinc-300 ring-white/10 hover:bg-white/10"
                 }`}
               >
-                {label}
-                <span className={`ml-1.5 text-xs ${active ? "text-emerald-900/70" : "text-zinc-500"}`}>
+                <span>{label}</span>
+                <span className={`text-xs tabular-nums ${active ? "text-zinc-500" : "text-zinc-500"}`}>
                   {count}
                 </span>
               </button>
@@ -67,7 +67,7 @@ function EmptyState() {
   return (
     <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-white/10 bg-white/[0.02] px-6 py-16 text-center">
       <p className="text-sm text-zinc-400">
-        아직 등록된 앱이 없어요. 터미널에서{" "}
+        아직 등록된 앱이 없어요. Claude Code에서{" "}
         <code className="rounded bg-white/10 px-1.5 py-0.5 font-mono text-zinc-200">
           /add-app &lt;repo&gt;
         </code>{" "}

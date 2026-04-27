@@ -21,10 +21,10 @@ export const PLATFORM_LABEL: Record<Platform, string> = {
 };
 
 export const PLATFORM_ACCENT: Record<Platform, string> = {
-  web: "bg-emerald-500/15 text-emerald-300 ring-emerald-500/30",
-  macos: "bg-sky-500/15 text-sky-300 ring-sky-500/30",
-  ios: "bg-violet-500/15 text-violet-300 ring-violet-500/30",
-  other: "bg-zinc-500/15 text-zinc-300 ring-zinc-500/30",
+  web: "bg-white/10 text-zinc-200 ring-white/15",
+  macos: "bg-white/10 text-zinc-200 ring-white/15",
+  ios: "bg-white/10 text-zinc-200 ring-white/15",
+  other: "bg-white/10 text-zinc-200 ring-white/15",
 };
 
 import data from "@/data/apps.json";
