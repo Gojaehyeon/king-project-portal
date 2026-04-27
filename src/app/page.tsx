@@ -23,15 +23,26 @@ export default function Home() {
             />
           </div>
           <div className="leading-tight">
-            <p className="text-sm font-semibold text-zinc-100">고재현 · Gojaehyeon</p>
-            <a
-              href="https://github.com/Gojaehyeon"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="text-xs text-zinc-500 hover:text-zinc-300"
-            >
-              github.com/Gojaehyeon
-            </a>
+            <p className="text-sm font-semibold text-zinc-100">고재현 · Gojaehyun</p>
+            <div className="mt-0.5 flex items-center gap-2 text-xs text-zinc-500">
+              <a
+                href="https://github.com/Gojaehyeon"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="hover:text-zinc-300"
+              >
+                GitHub
+              </a>
+              <span aria-hidden="true">·</span>
+              <a
+                href="https://instagram.com/gojaehyun.go"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="hover:text-zinc-300"
+              >
+                Instagram
+              </a>
+            </div>
           </div>
         </div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-zinc-500">
@@ -58,14 +69,24 @@ export default function Home() {
       <footer className="mt-20 border-t border-white/5 pt-8 text-xs text-zinc-500">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <span>© TNT Labs · vibe-coded with Claude</span>
-          <a
-            href="https://github.com/Gojaehyeon"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="text-zinc-400 hover:text-zinc-200"
-          >
-            github.com/Gojaehyeon
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href="https://github.com/Gojaehyeon"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-zinc-400 hover:text-zinc-200"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://instagram.com/gojaehyun.go"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-zinc-400 hover:text-zinc-200"
+            >
+              Instagram
+            </a>
+          </div>
         </div>
       </footer>
     </main>
