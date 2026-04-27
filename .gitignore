@@ -39,6 +39,10 @@ yarn-error.log*
 # OMC session state (local only)
 .omc/
 
+# Instagram scrape session (contains login cookies — never commit)
+scripts/.instagram-session.json
+scripts/.reels-cache.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

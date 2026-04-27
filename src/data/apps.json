@@ -1,5 +1,31 @@
 [
   {
+    "slug": "wink_writer",
+    "title": "Wink Writer",
+    "description": "검지로 화면 위에 글씨를 쓰고, 윙크할 때만 빛나는 보라 잉크가 남는 macOS 메뉴바 매직 펜 — MediaPipe + PyQt6 vibe-coded by TNT Labs",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/wink_writer",
+    "thumbnail": "/thumbs/wink_writer.png",
+    "tags": [
+      "Python"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-27T09:03:49Z"
+  },
+  {
+    "slug": "taxigo",
+    "title": "Taxigo",
+    "description": "친구 카풀 빚을 커피 잔수로 청구하는 한국식 레트로 택시 미터기 iOS 앱. A Korean-style retro taxi meter for carpool coffee debts.",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/taxigo",
+    "thumbnail": "/thumbs/taxigo.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-20T05:48:30Z"
+  },
+  {
     "slug": "knocker",
     "title": "Knocker",
     "description": "Tap your MacBook palmrest to fire hotkeys. Menu bar app on the Apple Silicon MEMS IMU.",
@@ -24,32 +50,6 @@
     ],
     "featured": false,
     "createdAt": "2026-04-15T06:11:04Z"
-  },
-  {
-    "slug": "taxigo",
-    "title": "Taxigo",
-    "description": "친구 카풀 빚을 커피 잔수로 청구하는 한국식 레트로 택시 미터기 iOS 앱. A Korean-style retro taxi meter for carpool coffee debts.",
-    "platform": "ios",
-    "repoUrl": "https://github.com/Gojaehyeon/taxigo",
-    "thumbnail": "/thumbs/taxigo.png",
-    "tags": [
-      "Swift"
-    ],
-    "featured": false,
-    "createdAt": "2026-04-20T05:48:30Z"
-  },
-  {
-    "slug": "wink_writer",
-    "title": "Wink Writer",
-    "description": "검지로 화면 위에 글씨를 쓰고, 윙크할 때만 빛나는 보라 잉크가 남는 macOS 메뉴바 매직 펜 — MediaPipe + PyQt6 vibe-coded by TNT Labs",
-    "platform": "macos",
-    "repoUrl": "https://github.com/Gojaehyeon/wink_writer",
-    "thumbnail": "/thumbs/wink_writer.png",
-    "tags": [
-      "Python"
-    ],
-    "featured": false,
-    "createdAt": "2026-04-27T09:03:49Z"
   },
   {
     "slug": "kikey",
