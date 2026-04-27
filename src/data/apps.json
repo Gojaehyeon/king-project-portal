@@ -1,5 +1,126 @@
 [
   {
+    "slug": "kikey",
+    "title": "Kikey",
+    "description": "Cute keyboard sound app for Mac. Type happily, work calmly.",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/kikey",
+    "thumbnail": "/thumbs/kikey.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-13T06:12:13Z"
+  },
+  {
+    "slug": "seismo",
+    "title": "Seismo",
+    "description": "Live seismograph for Apple Silicon MacBooks, driven by the undocumented SPU MEMS IMU.",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/seismo",
+    "thumbnail": "/thumbs/seismo.png",
+    "tags": [
+      "HTML"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-15T06:11:04Z"
+  },
+  {
+    "slug": "taxigo",
+    "title": "Taxigo",
+    "description": "친구 카풀 빚을 커피 잔수로 청구하는 한국식 레트로 택시 미터기 iOS 앱. A Korean-style retro taxi meter for carpool coffee debts.",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/taxigo",
+    "thumbnail": "/thumbs/taxigo.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-20T05:48:30Z"
+  },
+  {
+    "slug": "wink_writer",
+    "title": "Wink Writer",
+    "description": "검지로 화면 위에 글씨를 쓰고, 윙크할 때만 빛나는 보라 잉크가 남는 macOS 메뉴바 매직 펜 — MediaPipe + PyQt6 vibe-coded by TNT Labs",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/wink_writer",
+    "thumbnail": "/thumbs/wink_writer.png",
+    "tags": [
+      "Python"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-27T09:03:49Z"
+  },
+  {
+    "slug": "handvox",
+    "title": "Handvox",
+    "description": "Browser vocal harmoniser conducted with both hands through your webcam — diatonic jazz stacks over a selected key, no install.",
+    "platform": "web",
+    "demoUrl": "https://handvox.vercel.app",
+    "repoUrl": "https://github.com/Gojaehyeon/handvox",
+    "thumbnail": "/thumbs/handvox.png",
+    "tags": [
+      "JavaScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-22T15:50:10Z"
+  },
+  {
+    "slug": "knocker",
+    "title": "Knocker",
+    "description": "Tap your MacBook palmrest to fire hotkeys. Menu bar app on the Apple Silicon MEMS IMU.",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/knocker",
+    "thumbnail": "/thumbs/knocker.png",
+    "tags": [
+      "Go"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-15T06:10:59Z"
+  },
+  {
+    "slug": "bang-zombie",
+    "title": "Bang Zombie",
+    "description": "맥북 웹캠으로 플레이하는 1인칭 좀비 슈팅 — 손 권총 포즈 + 윙크 발사",
+    "platform": "web",
+    "demoUrl": "https://bang-zombie.vercel.app",
+    "repoUrl": "https://github.com/Gojaehyeon/bang-zombie",
+    "thumbnail": "/thumbs/bang-zombie.png",
+    "tags": [
+      "TypeScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-15T09:56:04Z"
+  },
+  {
+    "slug": "soundgo",
+    "title": "Soundgo",
+    "description": "Webcam-based hybrid instrument: chord wheels + melody keyboard, controlled with your fingertips",
+    "platform": "web",
+    "demoUrl": "https://soundgo.vercel.app",
+    "repoUrl": "https://github.com/Gojaehyeon/soundgo",
+    "thumbnail": "/thumbs/soundgo.png",
+    "tags": [
+      "HTML"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-21T13:42:11Z"
+  },
+  {
+    "slug": "photomoto",
+    "title": "Photomoto",
+    "description": "맥북 웹캠으로 찍는 인생네컷 스타일 웹 부스 — 6컷 촬영 후 4컷 선택, 10초 영상 스트립 내보내기. 고양이 모드는 MediaPipe 손 추적으로 고양이가 손 위로 올라옴.",
+    "platform": "web",
+    "demoUrl": "https://photo4u.vercel.app",
+    "repoUrl": "https://github.com/Gojaehyeon/photomoto",
+    "thumbnail": "/thumbs/photomoto.png",
+    "tags": [
+      "TypeScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-24T14:57:27Z"
+  },
+  {
     "slug": "chamchamcham",
     "title": "Chamchamcham",
     "description": "웹캠 얼굴/손 인식으로 즐기는 한국식 참참참 — MediaPipe + Next.js 16 vibe-coded mini-game by TNT Games",

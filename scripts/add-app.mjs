@@ -69,7 +69,11 @@ try {
 }
 
 const description = (meta.description || "").trim();
-const demoUrl = meta.homepageUrl?.trim() || undefined;
+let demoUrl = meta.homepageUrl?.trim() || undefined;
+// Treat homepageUrl that just points back to the repo (or any github.com URL) as no-demo.
+if (demoUrl && /^https?:\/\/(www\.)?github\.com\//i.test(demoUrl)) {
+  demoUrl = undefined;
+}
 const repoUrl = meta.url;
 const topics = (meta.repositoryTopics || []).map((t) => t.name);
 const lang = meta.primaryLanguage?.name;
@@ -84,11 +88,11 @@ const title = repo
 function inferPlatform() {
   if (flags.platform) return flags.platform;
   const haystack = `${description} ${topics.join(" ")} ${lang || ""}`.toLowerCase();
-  if (/\b(ios|ipados|swiftui|swift student|iphone|ipad)\b/.test(haystack)) return "ios";
-  if (/\b(macos|menu ?bar|메뉴바|menubar|appkit|mac app|apple silicon)\b/.test(haystack)) return "macos";
+  // iOS-only signals (require explicit iOS/iPad/iPhone keywords)
+  if (/\b(ios|ipados|swift student|iphone|ipad|app ?store)\b/.test(haystack)) return "ios";
+  // macOS signals — Mac/맥/메뉴바/Apple Silicon/macOS keywords
+  if (/(macos|menu ?bar|메뉴바|menubar|appkit|mac app|for mac\b|맥북|macbook|apple silicon|mac os)/.test(haystack)) return "macos";
   if (demoUrl) return "web";
-  if (lang === "Swift") return "ios";
-  if (lang === "Python" || lang === "Go") return "other";
   return "other";
 }
 
@@ -129,13 +133,42 @@ async function captureScreenshot(url, outPath) {
   }
 }
 
-async function fetchOgImage(outPath) {
-  const url = `https://opengraph.githubassets.com/1/${owner}/${repo}.png`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`OG image fetch failed: ${res.status}`);
-  const buf = Buffer.from(await res.arrayBuffer());
-  writeFileSync(outPath, buf);
-  return true;
+// Platform-tinted gradient palette for fallback cards
+const PLATFORM_GRADIENT = {
+  web: ["#022c22", "#10b981"],
+  macos: ["#0c2540", "#0ea5e9"],
+  ios: ["#1f1147", "#a855f7"],
+  other: ["#18181b", "#52525b"],
+};
+
+async function renderFallbackCard(outPath, info) {
+  const puppeteer = (await import("puppeteer")).default;
+  const [from, to] = PLATFORM_GRADIENT[info.platform] || PLATFORM_GRADIENT.other;
+  const escapeHtml = (s) =>
+    s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const html = `<!doctype html><html><head><meta charset="utf-8"><style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{width:1280px;height:800px;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Apple SD Gothic Neo,sans-serif;background:linear-gradient(135deg,${from} 0%,${to} 100%);color:#fff;padding:96px 88px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+    body::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 0%,rgba(255,255,255,.12),transparent 50%)}
+    .badge{position:absolute;top:64px;left:88px;font-size:18px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+    .platform{position:absolute;top:64px;right:88px;font-size:14px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);background:rgba(255,255,255,.08);padding:8px 16px;border-radius:999px;backdrop-filter:blur(4px)}
+    h1{font-size:108px;font-weight:700;line-height:1.04;letter-spacing:-.03em;margin-bottom:36px;position:relative}
+    p{font-size:30px;line-height:1.4;color:rgba(255,255,255,.78);max-width:1000px;position:relative;font-weight:400}
+  </style></head><body>
+    <div class="badge">TNT Labs · Daily</div>
+    <div class="platform">${escapeHtml(info.platformLabel)}</div>
+    <h1>${escapeHtml(info.title)}</h1>
+    <p>${escapeHtml(info.description.slice(0, 160))}</p>
+  </body></html>`;
+  const browser = await puppeteer.launch({ headless: true, args: ["--no-sandbox"] });
+  try {
+    const page = await browser.newPage();
+    await page.setViewport({ width: 1280, height: 800, deviceScaleFactor: 2 });
+    await page.setContent(html, { waitUntil: "networkidle0" });
+    await page.screenshot({ path: outPath, type: "png" });
+  } finally {
+    await browser.close();
+  }
 }
 
 async function generateThumbnail() {
@@ -150,12 +183,18 @@ async function generateThumbnail() {
       console.log(`✓ Screenshot saved → ${thumbRel}`);
       return thumbRel;
     } catch (err) {
-      console.warn(`⚠ Screenshot failed (${err.message}), falling back to OG image`);
+      console.warn(`⚠ Screenshot failed (${err.message}), generating fallback card`);
     }
   }
-  console.log("→ Fetching GitHub OG image...");
-  await fetchOgImage(thumbPath);
-  console.log(`✓ OG image saved → ${thumbRel}`);
+  console.log("→ Rendering fallback card...");
+  await renderFallbackCard(thumbPath, {
+    title,
+    description: description || `${owner}/${repo}`,
+    platform,
+    platformLabel:
+      platform === "web" ? "Web" : platform === "macos" ? "macOS" : platform === "ios" ? "iOS" : "Other",
+  });
+  console.log(`✓ Fallback card saved → ${thumbRel}`);
   return thumbRel;
 }
 
