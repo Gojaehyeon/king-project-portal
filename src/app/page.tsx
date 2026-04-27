@@ -46,16 +46,16 @@ export default function Home() {
           </div>
         </div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-zinc-500">
-          TNT Labs · Daily Vibe-Coded
+          KING PROJECT · DAILY
         </p>
         <h1 className="text-3xl font-semibold leading-tight tracking-tight text-zinc-50 sm:text-5xl">
-          매일 새로 만드는
+          하루에 한 개씩,
           <br />
-          작은 앱들의 포털.
+          킹받는 프로그램 만들기.
         </h1>
         <p className="mt-4 max-w-xl text-base leading-relaxed text-zinc-400 sm:text-lg">
-          하루에 하나씩, 아이디어를 빠르게 만들어 올립니다. 웹 데모는 한 탭으로,
-          데스크탑·모바일 전용 앱은 GitHub 레포로 이어집니다.
+          매일 한 개씩 킹받는 프로그램을 만드는 프로젝트 진행 중.
+          웹 데모는 한 탭으로, 데스크탑·모바일 전용 앱은 GitHub 레포로 이어집니다.
         </p>
         {latest && (
           <p className="mt-4 text-xs text-zinc-500">
@@ -68,7 +68,7 @@ export default function Home() {
 
       <footer className="mt-20 border-t border-white/5 pt-8 text-xs text-zinc-500">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <span>© TNT Labs · vibe-coded with Claude</span>
+          <span>© Gojaehyun · vibe-coded with Claude</span>
           <div className="flex items-center gap-3">
             <a
               href="https://github.com/Gojaehyeon"

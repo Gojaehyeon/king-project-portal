@@ -6,12 +6,12 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "King Project Portal — Daily Vibe-Coded Apps",
+  title: "킹 프로젝트 포털 — 하루에 한 개씩 킹받는 프로그램 만들기",
   description:
-    "TNT Labs / TNT Games가 매일 하나씩 만들어 올리는 vibe-coded 앱 모음. 웹 데모는 한 탭으로, 데스크탑·모바일 앱은 레포로.",
+    "고재현(Gojaehyun)이 매일 한 개씩 킹받는 프로그램을 만드는 프로젝트. 웹 데모와 데스크탑·모바일 앱을 한 곳에서.",
   openGraph: {
-    title: "King Project Portal",
-    description: "매일 새로 만들어지는 vibe-coded 앱 모음",
+    title: "킹 프로젝트 포털",
+    description: "하루에 한 개씩, 킹받는 프로그램 만들기.",
     type: "website",
   },
 };

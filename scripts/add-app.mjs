@@ -10,6 +10,7 @@
  *   node scripts/add-app.mjs <repo>           (defaults owner to Gojaehyeon)
  *   node scripts/add-app.mjs <owner>/<repo>
  *   node scripts/add-app.mjs <repo> --no-deploy --featured --platform=macos
+ *   node scripts/add-app.mjs <repo> --thumbnail=/path/to/reel-capture.png
  */
 
 import { execFileSync, spawnSync } from "node:child_process";
@@ -155,7 +156,7 @@ async function renderFallbackCard(outPath, info) {
     h1{font-size:108px;font-weight:700;line-height:1.04;letter-spacing:-.03em;margin-bottom:36px;position:relative;color:#fafafa}
     p{font-size:30px;line-height:1.4;color:rgba(250,250,250,.7);max-width:1000px;position:relative;font-weight:400}
   </style></head><body>
-    <div class="badge">TNT Labs · Daily</div>
+    <div class="badge">King Project · Daily</div>
     <div class="platform">${escapeHtml(info.platformLabel)}</div>
     <h1>${escapeHtml(info.title)}</h1>
     <p>${escapeHtml(info.description.slice(0, 160))}</p>
@@ -175,6 +176,21 @@ async function generateThumbnail() {
   if (flags["no-thumbnail"]) {
     console.log("→ Skipping thumbnail generation (--no-thumbnail)");
     return existsSync(thumbPath) ? thumbRel : "/thumbs/_placeholder.png";
+  }
+  // Manual override — typically a Reel/video screenshot the user dropped in
+  if (flags.thumbnail) {
+    const src = resolve(process.cwd(), String(flags.thumbnail));
+    if (!existsSync(src)) {
+      console.error(`✗ --thumbnail path not found: ${src}`);
+      process.exit(1);
+    }
+    const ext = src.split(".").pop()?.toLowerCase() || "png";
+    const finalPath = resolve(THUMBS_DIR, `${slug}.${ext === "jpg" ? "jpg" : ext}`);
+    const finalRel = `/thumbs/${slug}.${ext === "jpg" ? "jpg" : ext}`;
+    const buf = readFileSync(src);
+    writeFileSync(finalPath, buf);
+    console.log(`✓ Manual thumbnail copied → ${finalRel}`);
+    return finalRel;
   }
   if (demoUrl) {
     try {
