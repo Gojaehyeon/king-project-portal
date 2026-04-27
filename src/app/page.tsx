@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PortalGrid } from "@/components/PortalGrid";
 import { getApps } from "@/lib/apps";
 
@@ -10,6 +11,29 @@ export default function Home() {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col px-4 pb-24 pt-12 sm:px-6 sm:pt-16 lg:px-8">
       <header className="mb-10 sm:mb-14">
+        <div className="mb-6 flex items-center gap-3">
+          <div className="relative h-14 w-14 overflow-hidden rounded-full ring-1 ring-white/15 sm:h-16 sm:w-16">
+            <Image
+              src="/avatar.png"
+              alt="Gojaehyeon"
+              fill
+              sizes="64px"
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div className="leading-tight">
+            <p className="text-sm font-semibold text-zinc-100">고재현 · Gojaehyeon</p>
+            <a
+              href="https://github.com/Gojaehyeon"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-xs text-zinc-500 hover:text-zinc-300"
+            >
+              github.com/Gojaehyeon
+            </a>
+          </div>
+        </div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-zinc-500">
           TNT Labs · Daily Vibe-Coded
         </p>
