@@ -11,6 +11,7 @@
  *   node scripts/add-app.mjs <owner>/<repo>
  *   node scripts/add-app.mjs <repo> --no-deploy --featured --platform=macos
  *   node scripts/add-app.mjs <repo> --thumbnail=/path/to/reel-capture.png
+ *   node scripts/add-app.mjs <repo> --reel=https://www.instagram.com/reel/XXXX/
  */
 
 import { execFileSync, spawnSync } from "node:child_process";
@@ -142,6 +143,48 @@ const PLATFORM_GRADIENT = {
   other: ["#18181b", "#3f3f46"],
 };
 
+// Pull cover image from an Instagram Reel/Post URL via OG meta.
+// Tries the /embed/ endpoint first (less protected), then the canonical URL.
+async function fetchReelCover(reelUrl, outPath) {
+  const UA =
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15";
+  const cleaned = reelUrl.replace(/[?#].*$/, "").replace(/\/$/, "");
+  const candidates = [`${cleaned}/embed/`, cleaned];
+  let coverUrl;
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, {
+        headers: { "User-Agent": UA, "Accept-Language": "ko,en;q=0.8" },
+      });
+      if (!res.ok) continue;
+      const html = await res.text();
+      const og =
+        html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i) ||
+        html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i);
+      const embedPoster = html.match(/<video[^>]+poster=["']([^"']+)["']/i);
+      const fromJson = html.match(/"display_url":"(https:\\?\/\\?\/[^"]+\.(?:jpg|jpeg|png)[^"]*)"/);
+      const cand =
+        og?.[1] ||
+        embedPoster?.[1] ||
+        (fromJson?.[1] && fromJson[1].replace(/\\\//g, "/"));
+      if (cand) {
+        coverUrl = cand.replace(/&amp;/g, "&");
+        break;
+      }
+    } catch {
+      // try next candidate
+    }
+  }
+  if (!coverUrl) {
+    throw new Error("OG image not found in Reel page (Instagram may have blocked the request)");
+  }
+  const imgRes = await fetch(coverUrl, {
+    headers: { "User-Agent": UA, Referer: "https://www.instagram.com/" },
+  });
+  if (!imgRes.ok) throw new Error(`Reel cover download failed: ${imgRes.status}`);
+  writeFileSync(outPath, Buffer.from(await imgRes.arrayBuffer()));
+}
+
 async function renderFallbackCard(outPath, info) {
   const puppeteer = (await import("puppeteer")).default;
   const [from, to] = PLATFORM_GRADIENT[info.platform] || PLATFORM_GRADIENT.other;
@@ -176,6 +219,17 @@ async function generateThumbnail() {
   if (flags["no-thumbnail"]) {
     console.log("→ Skipping thumbnail generation (--no-thumbnail)");
     return existsSync(thumbPath) ? thumbRel : "/thumbs/_placeholder.png";
+  }
+  // Instagram Reel cover via OG meta scraping
+  if (flags.reel) {
+    try {
+      console.log(`→ Fetching Reel cover from ${flags.reel}...`);
+      await fetchReelCover(String(flags.reel), thumbPath);
+      console.log(`✓ Reel cover saved → ${thumbRel}`);
+      return thumbRel;
+    } catch (err) {
+      console.warn(`⚠ Reel cover fetch failed (${err.message}), continuing with normal pipeline`);
+    }
   }
   // Manual override — typically a Reel/video screenshot the user dropped in
   if (flags.thumbnail) {
