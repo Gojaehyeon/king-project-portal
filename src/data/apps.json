@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "chamchamcham",
+    "title": "Chamchamcham",
+    "description": "웹캠 얼굴/손 인식으로 즐기는 한국식 참참참 — MediaPipe + Next.js 16 vibe-coded mini-game by TNT Games",
+    "platform": "web",
+    "demoUrl": "https://chamchamcham.vercel.app",
+    "repoUrl": "https://github.com/Gojaehyeon/chamchamcham",
+    "thumbnail": "/thumbs/chamchamcham.png",
+    "tags": [
+      "TypeScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-25T08:28:00Z"
+  }
+]
