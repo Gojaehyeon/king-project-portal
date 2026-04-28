@@ -9,7 +9,8 @@
     "lint": "eslint",
     "add-app": "node scripts/add-app.mjs",
     "remove-app": "node scripts/remove-app.mjs",
-    "refresh-app": "node scripts/add-app.mjs"
+    "refresh-app": "node scripts/add-app.mjs",
+    "gg": "node scripts/gg.mjs"
   },
   "dependencies": {
     "next": "16.2.4",
