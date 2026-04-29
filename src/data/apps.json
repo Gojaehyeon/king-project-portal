@@ -1,8 +1,34 @@
 [
   {
+    "slug": "thumbnail-detox",
+    "title": "Thumbnail Detox",
+    "description": "유튜브 썸네일을 흑백·블러·텍스트 전용 모드로 진정시키는 Chrome MV3 익스텐션. 호버 미리보기도 차단.",
+    "platform": "other",
+    "repoUrl": "https://github.com/Gojaehyeon/thumbnail-detox",
+    "thumbnail": "/thumbs/thumbnail-detox.png",
+    "tags": [
+      "CSS"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-29T13:23:12Z"
+  },
+  {
+    "slug": "catfield",
+    "title": "Catfield",
+    "description": "사진 한 장이면 누끼 따서 가상 풀밭에 자동으로 풀어주는 고양이 게시판. Next.js + Supabase + 브라우저 누끼 처리.",
+    "platform": "other",
+    "repoUrl": "https://github.com/Gojaehyeon/catfield",
+    "thumbnail": "/thumbs/catfield.png",
+    "tags": [
+      "TypeScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-28T13:49:04Z"
+  },
+  {
     "slug": "wink_writer",
     "title": "Wink Writer",
-    "description": "검지로 화면 위에 글씨를 쓰고, 윙크할 때만 빛나는 보라 잉크가 남는 macOS 메뉴바 매직 펜 — MediaPipe + PyQt6 vibe-coded by TNT Labs",
+    "description": "검지로 화면 위에 글씨를 쓰고, 윙크할 때만 보라 잉크가 남는 macOS 메뉴바 매직 펜. MediaPipe + PyQt6.",
     "platform": "macos",
     "repoUrl": "https://github.com/Gojaehyeon/wink_writer",
     "thumbnail": "/thumbs/wink_writer.png",
@@ -15,7 +41,7 @@
   {
     "slug": "taxigo",
     "title": "Taxigo",
-    "description": "친구 카풀 빚을 커피 잔수로 청구하는 한국식 레트로 택시 미터기 iOS 앱. A Korean-style retro taxi meter for carpool coffee debts.",
+    "description": "친구 카풀 빚을 커피 잔수로 청구하는 한국식 레트로 택시 미터기 iOS 앱.",
     "platform": "ios",
     "repoUrl": "https://github.com/Gojaehyeon/taxigo",
     "thumbnail": "/thumbs/taxigo.png",
@@ -28,7 +54,7 @@
   {
     "slug": "knocker",
     "title": "Knocker",
-    "description": "Tap your MacBook palmrest to fire hotkeys. Menu bar app on the Apple Silicon MEMS IMU.",
+    "description": "맥북 팜레스트를 톡톡 두드리면 단축키가 실행되는 메뉴바 앱. 애플 실리콘 MEMS IMU 활용.",
     "platform": "macos",
     "repoUrl": "https://github.com/Gojaehyeon/knocker",
     "thumbnail": "/thumbs/knocker.png",
@@ -41,7 +67,7 @@
   {
     "slug": "seismo",
     "title": "Seismo",
-    "description": "Live seismograph for Apple Silicon MacBooks, driven by the undocumented SPU MEMS IMU.",
+    "description": "애플 실리콘 맥북에 내장된 MEMS IMU로 실시간 지진계를 띄우는 macOS 앱.",
     "platform": "macos",
     "repoUrl": "https://github.com/Gojaehyeon/seismo",
     "thumbnail": "/thumbs/seismo.png",
@@ -54,7 +80,7 @@
   {
     "slug": "kikey",
     "title": "Kikey",
-    "description": "Cute keyboard sound app for Mac. Type happily, work calmly.",
+    "description": "타이핑할 때 귀여운 키보드 사운드가 나는 맥용 앱. 즐겁게 타자치고, 차분하게 일하기.",
     "platform": "macos",
     "repoUrl": "https://github.com/Gojaehyeon/kikey",
     "thumbnail": "/thumbs/kikey.png",
@@ -67,7 +93,7 @@
   {
     "slug": "handvox",
     "title": "Handvox",
-    "description": "Browser vocal harmoniser conducted with both hands through your webcam — diatonic jazz stacks over a selected key, no install.",
+    "description": "웹캠으로 양손을 흔들면 선택한 키의 다이아토닉 재즈 화음이 쌓이는 브라우저 보컬 하모나이저. 설치 없이 바로.",
     "platform": "web",
     "demoUrl": "https://handvox.vercel.app",
     "repoUrl": "https://github.com/Gojaehyeon/handvox",
@@ -81,7 +107,7 @@
   {
     "slug": "bang-zombie",
     "title": "Bang Zombie",
-    "description": "맥북 웹캠으로 플레이하는 1인칭 좀비 슈팅 — 손 권총 포즈 + 윙크 발사",
+    "description": "맥북 웹캠으로 플레이하는 1인칭 좀비 슈팅 — 손 권총 포즈 + 윙크 발사.",
     "platform": "web",
     "demoUrl": "https://bang-zombie.vercel.app",
     "repoUrl": "https://github.com/Gojaehyeon/bang-zombie",
@@ -95,7 +121,7 @@
   {
     "slug": "soundgo",
     "title": "Soundgo",
-    "description": "Webcam-based hybrid instrument: chord wheels + melody keyboard, controlled with your fingertips",
+    "description": "코드 휠 + 멜로디 키보드를 손끝으로 다루는 웹캠 기반 하이브리드 악기.",
     "platform": "web",
     "demoUrl": "https://soundgo.vercel.app",
     "repoUrl": "https://github.com/Gojaehyeon/soundgo",
@@ -123,7 +149,7 @@
   {
     "slug": "chamchamcham",
     "title": "Chamchamcham",
-    "description": "웹캠 얼굴/손 인식으로 즐기는 한국식 참참참 — MediaPipe + Next.js 16 vibe-coded mini-game by TNT Games",
+    "description": "웹캠 얼굴·손 인식으로 즐기는 한국식 참참참 미니 게임. MediaPipe + Next.js 16.",
     "platform": "web",
     "demoUrl": "https://chamchamcham.vercel.app",
     "repoUrl": "https://github.com/Gojaehyeon/chamchamcham",
