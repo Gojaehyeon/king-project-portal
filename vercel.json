@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "king-project-portal.vercel.app" }],
+      "destination": "https://king-project-portal.gojaehyun.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "king-project-portal.vercel.app" }],
+      "destination": "https://king-project-portal.gojaehyun.com/:path*",
+      "permanent": true
+    }
+  ]
+}
