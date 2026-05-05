@@ -4,7 +4,7 @@ import { type App, PLATFORM_LABEL, PLATFORM_ACCENT } from "@/lib/apps";
 export function AppCard({ app }: { app: App }) {
   const primaryHref = app.downloadUrl || app.demoUrl || app.repoUrl;
   const primaryLabel = app.downloadUrl
-    ? "DMG 다운로드"
+    ? "맥 앱 다운로드"
     : app.demoUrl
       ? "데모 열기"
       : "GitHub";
