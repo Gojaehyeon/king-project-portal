@@ -6,6 +6,9 @@ export interface App {
   description: string;
   platform: Platform;
   demoUrl?: string;
+  /** Direct binary download (e.g. .dmg from GitHub Releases). Takes precedence
+   *  over demoUrl when present. */
+  downloadUrl?: string;
   repoUrl: string;
   thumbnail: string;
   tags: string[];

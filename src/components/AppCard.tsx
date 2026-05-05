@@ -2,8 +2,13 @@ import Image from "next/image";
 import { type App, PLATFORM_LABEL, PLATFORM_ACCENT } from "@/lib/apps";
 
 export function AppCard({ app }: { app: App }) {
-  const primaryHref = app.demoUrl || app.repoUrl;
-  const primaryLabel = app.demoUrl ? "데모 열기" : "GitHub";
+  const primaryHref = app.downloadUrl || app.demoUrl || app.repoUrl;
+  const primaryLabel = app.downloadUrl
+    ? "DMG 다운로드"
+    : app.demoUrl
+      ? "데모 열기"
+      : "GitHub";
+  const hasSecondary = Boolean(app.downloadUrl || app.demoUrl);
 
   return (
     <article
@@ -72,11 +77,12 @@ export function AppCard({ app }: { app: App }) {
             href={primaryHref}
             target="_blank"
             rel="noreferrer noopener"
+            {...(app.downloadUrl ? { download: "" } : {})}
             className="inline-flex h-9 flex-1 items-center justify-center rounded-lg bg-zinc-100 px-3 text-sm font-medium text-zinc-950 transition-colors hover:bg-white active:bg-zinc-300"
           >
             {primaryLabel}
           </a>
-          {app.demoUrl && (
+          {hasSecondary && (
             <a
               href={app.repoUrl}
               target="_blank"

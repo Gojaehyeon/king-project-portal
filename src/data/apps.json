@@ -1,5 +1,86 @@
 [
   {
+    "slug": "keyhigh",
+    "title": "Keyhigh",
+    "description": "타자치면 함께 달리는 데스크탑 마우스 위젯 (macOS)",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/keyhigh",
+    "thumbnail": "/thumbs/keyhigh.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-05T07:57:38Z",
+    "downloadUrl": "https://github.com/Gojaehyeon/keyhigh/releases/download/v0.1.1/KeyHigh-0.1.1.dmg"
+  },
+  {
+    "slug": "claudego",
+    "title": "Claudego",
+    "description": "Claude Code 알림을 ESP32+서보+부저+LED로 책상 위에서 받는 알림함 펌웨어",
+    "platform": "other",
+    "repoUrl": "https://github.com/Gojaehyeon/claudego",
+    "thumbnail": "/thumbs/claudego.png",
+    "tags": [
+      "C++"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-04T12:26:03Z"
+  },
+  {
+    "slug": "instaclock",
+    "title": "Instaclock",
+    "description": "인스타그램 팔로워 실시간 플립 클락",
+    "platform": "web",
+    "demoUrl": "https://instaclock.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/instaclock",
+    "thumbnail": "/thumbs/instaclock.png",
+    "tags": [
+      "JavaScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-02T11:54:51Z"
+  },
+  {
+    "slug": "samplego",
+    "title": "Samplego",
+    "description": "마이크로 녹음한 소리를 피아노 건반으로 연주하는 웹 샘플러",
+    "platform": "web",
+    "demoUrl": "https://samplego.vercel.app",
+    "repoUrl": "https://github.com/Gojaehyeon/samplego",
+    "thumbnail": "/thumbs/samplego.png",
+    "tags": [
+      "TypeScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-02T10:40:44Z"
+  },
+  {
+    "slug": "makery",
+    "title": "Makery",
+    "description": "내가 켜둔 여러 Claude Code 세션을 옆 모니터에 베이커리/사무실 게임처럼 띄우는 macOS 데스크톱 앱",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/makery",
+    "thumbnail": "/thumbs/makery.png",
+    "tags": [
+      "TypeScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-01T10:42:31Z"
+  },
+  {
+    "slug": "gungdi-pangpang",
+    "title": "Gungdi Pangpang",
+    "description": "맥북 팜레스트를 두드리면 삼색 고양이 궁디가 씰룩, 멈추면 돌아보며 야옹. seismo 가속도계 SSE 위에 얹은 SwiftUI 윈도우 앱.",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/gungdi-pangpang",
+    "thumbnail": "/thumbs/gungdi-pangpang.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-04-30T12:22:42Z"
+  },
+  {
     "slug": "thumbnail-detox",
     "title": "Thumbnail Detox",
     "description": "유튜브 썸네일을 흑백·블러·텍스트 전용 모드로 진정시키는 Chrome MV3 익스텐션. 호버 미리보기도 차단.",
