@@ -1,5 +1,19 @@
 [
   {
+    "slug": "cat-trash",
+    "title": "Cat Trash",
+    "description": "맥 Dock에 사는 고양이 모양 보조 휴지통 - 파일 드롭하면 입 다물고 우물우물",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/cat-trash",
+    "thumbnail": "/thumbs/cat-trash.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-05T10:59:18Z",
+    "downloadUrl": "https://github.com/Gojaehyeon/cat-trash/releases/download/v0.1.0/CatTrash.dmg"
+  },
+  {
     "slug": "keyhigh",
     "title": "Keyhigh",
     "description": "타자치면 함께 달리는 데스크탑 마우스 위젯 (macOS)",
@@ -11,7 +25,7 @@
     ],
     "featured": false,
     "createdAt": "2026-05-05T07:57:38Z",
-    "downloadUrl": "https://github.com/Gojaehyeon/keyhigh/releases/download/v0.1.1/KeyHigh-0.1.1.dmg"
+    "downloadUrl": "https://github.com/Gojaehyeon/keyhigh/releases/download/v0.1.2/KeyHigh-0.1.2.dmg"
   },
   {
     "slug": "claudego",
