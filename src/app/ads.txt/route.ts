@@ -1,7 +1,7 @@
 export const dynamic = "force-static";
 
 export function GET() {
-  const publisherId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
+  const publisherId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID?.trim();
 
   if (!publisherId) {
     return new Response("# AdSense publisher ID not configured. Set NEXT_PUBLIC_ADSENSE_CLIENT_ID.\n", {
