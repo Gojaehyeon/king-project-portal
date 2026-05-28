@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { PortalGrid } from "@/components/PortalGrid";
+import { SiteFooter } from "@/components/SiteFooter";
 import { getApps } from "@/lib/apps";
 
 export const dynamic = "force-static";
@@ -25,6 +27,10 @@ export default function Home() {
           <div className="leading-tight">
             <p className="text-sm font-semibold text-zinc-100">고재현 · Gojaehyun</p>
             <div className="mt-0.5 flex items-center gap-2 text-xs text-zinc-500">
+              <Link href="/about" className="hover:text-zinc-300">소개</Link>
+              <span aria-hidden="true">·</span>
+              <Link href="/blog" className="hover:text-zinc-300">블로그</Link>
+              <span aria-hidden="true">·</span>
               <a
                 href="https://github.com/Gojaehyeon"
                 target="_blank"
@@ -66,29 +72,7 @@ export default function Home() {
 
       <PortalGrid apps={apps} />
 
-      <footer className="mt-20 border-t border-white/5 pt-8 text-xs text-zinc-500">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <span>© Gojaehyun · vibe-coded with Claude</span>
-          <div className="flex items-center gap-3">
-            <a
-              href="https://github.com/Gojaehyeon"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="text-zinc-400 hover:text-zinc-200"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://instagram.com/gojaehyun.go"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="text-zinc-400 hover:text-zinc-200"
-            >
-              Instagram
-            </a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
