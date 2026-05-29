@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -31,20 +30,18 @@ export default function RootLayout({
     <html lang="ko" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <head>
         {ADSENSE_CLIENT_ID && (
-          <meta name="google-adsense-account" content={ADSENSE_CLIENT_ID} />
+          <>
+            <meta name="google-adsense-account" content={ADSENSE_CLIENT_ID} />
+            <script
+              async
+              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+              crossOrigin="anonymous"
+            />
+          </>
         )}
       </head>
       <body className="min-h-full bg-zinc-950 text-zinc-100 selection:bg-zinc-100/30 selection:text-white">
         {children}
-        {ADSENSE_CLIENT_ID && (
-          <Script
-            id="adsbygoogle-init"
-            async
-            strategy="afterInteractive"
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
-            crossOrigin="anonymous"
-          />
-        )}
       </body>
     </html>
   );

@@ -1,5 +1,207 @@
 [
   {
+    "slug": "macmirror",
+    "title": "Macmirror",
+    "description": "아이폰·아이패드를 맥의 무선 보조 모니터로 쓰는 도구",
+    "platform": "macos",
+    "demoUrl": "https://macmirror.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/macmirror",
+    "thumbnail": "/thumbs/macmirror.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-29T02:33:43Z"
+  },
+  {
+    "slug": "watchmac",
+    "title": "Watchmac",
+    "description": "애플워치를 맥의 무선 미니 모니터로 쓰는 도구",
+    "platform": "macos",
+    "demoUrl": "https://watchmac.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/watchmac",
+    "thumbnail": "/thumbs/watchmac.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-29T01:42:59Z"
+  },
+  {
+    "slug": "talkbox",
+    "title": "Talkbox",
+    "description": "아이폰/아이패드용 다프트 펑크 스타일 보코더 앱 — 마이크에 말하면서 그리드 패드를 누르면 보컬 로봇 사운드",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/talkbox",
+    "thumbnail": "/thumbs/talkbox.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-27T10:08:15Z"
+  },
+  {
+    "slug": "nfcwake",
+    "title": "Nfcwake",
+    "description": "등록된 NFC 태그를 스캔해야만 꺼지는 iOS 알람 앱 (AlarmKit + Tier 3 사이렌 + 체인 알림)",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/nfcwake",
+    "thumbnail": "/thumbs/nfcwake.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-26T12:02:40Z"
+  },
+  {
+    "slug": "gatcha",
+    "title": "Gatcha",
+    "description": "웹캠 손동작으로 집게를 조종하는 3D 인형뽑기 게임",
+    "platform": "web",
+    "demoUrl": "https://gatcha.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/gatcha",
+    "thumbnail": "/thumbs/gatcha.png",
+    "tags": [
+      "JavaScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-22T06:03:20Z"
+  },
+  {
+    "slug": "imacro",
+    "title": "iMacro",
+    "description": "아이폰을 스트림덱처럼 쓰는 앱 — 버튼을 누르면 같은 Wi-Fi의 맥에서 단축키·앱 실행이 동작해요",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/imacro",
+    "thumbnail": "/thumbs/imacro.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-22T02:13:34Z"
+  },
+  {
+    "slug": "mactesla",
+    "title": "Mactesla",
+    "description": "테슬라 차량 브라우저를 맥북 확장 디스플레이로 쓰는 macOS 앱",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/mactesla",
+    "thumbnail": "/thumbs/mactesla.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-20T09:46:27Z"
+  },
+  {
+    "slug": "turtleman",
+    "title": "Turtleman",
+    "description": "웹캠으로 거북목 자세를 감지해 화면 중앙에 거대한 거북이를 등장시키는 macOS 앱",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/turtleman",
+    "thumbnail": "/thumbs/turtleman.png",
+    "tags": [
+      "JavaScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-19T06:12:11Z"
+  },
+  {
+    "slug": "timecalorie",
+    "title": "Timecalorie",
+    "description": "월급은 UP, 칼로리는 DOWN — 월급일·기초대사량 기준 실시간 카운터",
+    "platform": "web",
+    "demoUrl": "https://timecalorie.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/timecalorie",
+    "thumbnail": "/thumbs/timecalorie.png",
+    "tags": [
+      "HTML"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-19T00:14:00Z"
+  },
+  {
+    "slug": "flyman",
+    "title": "Flyman",
+    "description": "웹캠으로 팔을 펴고 협곡을 날아 코인을 모으는 펭귄 비행 게임",
+    "platform": "web",
+    "demoUrl": "https://flyman.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/flyman",
+    "thumbnail": "/thumbs/flyman.png",
+    "tags": [
+      "TypeScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-14T10:13:08Z"
+  },
+  {
+    "slug": "padpad",
+    "title": "Padpad",
+    "description": "MacBook 트랙패드를 4x4 드럼 패드로 변환 (Force Touch 압력 → MIDI velocity)",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/padpad",
+    "thumbnail": "/thumbs/padpad.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-13T07:46:05Z"
+  },
+  {
+    "slug": "trackphone",
+    "title": "Trackphone",
+    "description": "아이폰을 맥북의 멀티터치 트랙패드로 만드는 iOS + macOS 앱 페어 (Bonjour + UDP, 관성 스크롤·핀치·스와이프·Mission Control 지원)",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/trackphone",
+    "thumbnail": "/thumbs/trackphone.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-12T08:56:46Z"
+  },
+  {
+    "slug": "stylopad",
+    "title": "Stylopad",
+    "description": "iPad용 스타일로폰 클론 — Apple Pencil로 연주하는 프렛리스 신스 + 드럼/베이스 비트박스 + 4트랙 루프스테이션",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/stylopad",
+    "thumbnail": "/thumbs/stylopad.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-11T10:33:40Z"
+  },
+  {
+    "slug": "cellid",
+    "title": "Cellid",
+    "description": "맥북 힌지를 활처럼 켜는 첼로 — 키보드는 음정, lid 각속도가 활",
+    "platform": "macos",
+    "demoUrl": "https://cellid.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/cellid",
+    "thumbnail": "/thumbs/cellid.png",
+    "tags": [
+      "HTML"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-09T05:55:41Z"
+  },
+  {
+    "slug": "hinge-tone",
+    "title": "Hinge Tone",
+    "description": "맥북 힌지 각도로 조작하는 웹 DJ 콘솔 — 크로스페이드/스크래치/루프/유튜브 로딩",
+    "platform": "macos",
+    "demoUrl": "https://hinge-tone.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/hinge-tone",
+    "thumbnail": "/thumbs/hinge-tone.png",
+    "tags": [
+      "HTML"
+    ],
+    "featured": false,
+    "createdAt": "2026-05-07T08:19:18Z"
+  },
+  {
     "slug": "cat-trash",
     "title": "Cat Trash",
     "description": "맥 Dock에 사는 고양이 모양 보조 휴지통 - 파일 드롭하면 입 다물고 우물우물",
