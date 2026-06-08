@@ -1,5 +1,56 @@
 [
   {
+    "slug": "toycam",
+    "title": "Toycam",
+    "description": "아이폰 카메라를 실시간 픽셀아트 토이카메라로 바꿔주는 iOS 앱 (Metal 셰이더 · 픽셀화/색상양자화/디더링/흑백 · 슬라이더 조절)",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/toycam",
+    "thumbnail": "/thumbs/toycam.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-06-08T15:02:00Z"
+  },
+  {
+    "slug": "took",
+    "title": "Took",
+    "description": "단축어로 받은 할 일을 잠금화면 Live Activity·위젯에 큼직하게 띄우고 바로 체크하는 iOS 투두 앱",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/took",
+    "thumbnail": "/thumbs/took.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-04T01:50:56Z"
+  },
+  {
+    "slug": "expensivecalculator",
+    "title": "Expensivecalculator",
+    "description": "= 누르면 애플페이 결제창이 뜨고 Face ID로 결제해야 답이 나오는 iOS 농담 계산기 앱",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/expensivecalculator",
+    "thumbnail": "/thumbs/expensivecalculator.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-02T11:42:05Z"
+  },
+  {
+    "slug": "airwheel",
+    "title": "Airwheel",
+    "description": "맥북 웹캠으로 양손 허공 핸들을 돌려 즐기는 미디어파이프 기반 3D 레이싱 게임",
+    "platform": "macos",
+    "demoUrl": "https://airwheel.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/airwheel",
+    "thumbnail": "/thumbs/airwheel.png",
+    "tags": [
+      "JavaScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-01T07:51:47Z"
+  },
+  {
     "slug": "macmirror",
     "title": "Macmirror",
     "description": "아이폰·아이패드를 맥의 무선 보조 모니터로 쓰는 도구",
