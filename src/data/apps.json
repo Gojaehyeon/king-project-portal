@@ -6,7 +6,9 @@
     "platform": "ios",
     "repoUrl": "https://github.com/Gojaehyeon/toycam",
     "thumbnail": "/thumbs/toycam.png",
-    "tags": [],
+    "tags": [
+      "Swift"
+    ],
     "featured": false,
     "createdAt": "2026-06-08T15:02:00Z"
   },
