@@ -1,5 +1,122 @@
 [
   {
+    "slug": "fakecut",
+    "title": "Fakecut",
+    "description": "파이널컷 프로처럼 위장한 유튜브 뷰어 — 영상편집 프로그램 레이아웃 안에서 유튜브를 재생하는 가짜 편집기",
+    "platform": "web",
+    "demoUrl": "https://fakecut.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/fakecut",
+    "thumbnail": "/thumbs/fakecut.png",
+    "tags": [
+      "HTML"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-25T07:08:09Z"
+  },
+  {
+    "slug": "hidego",
+    "title": "Hidego",
+    "description": "단축키나 박수로 데스크탑 아이콘·폴더·Dock을 한 번에 숨기는 macOS 메뉴바 앱",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/hidego",
+    "thumbnail": "/thumbs/hidego.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-23T05:43:07Z"
+  },
+  {
+    "slug": "fitgo",
+    "title": "Fitgo",
+    "description": "내 사진 속 티셔츠를 AI로 인식해 그 부분만 투명하게 뚫고, 라이브 카메라로 어울리는 옷을 비춰보는 iOS 앱",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/fitgo",
+    "thumbnail": "/thumbs/fitgo.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-22T09:09:58Z"
+  },
+  {
+    "slug": "pocatmon",
+    "title": "Pocatmon",
+    "description": "동물 사진을 찍으면 누끼를 따서 포켓몬·유희왕 스타일 트레이딩 카드로 만들어주는 iOS 앱",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/pocatmon",
+    "thumbnail": "/thumbs/pocatmon.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-18T07:35:02Z"
+  },
+  {
+    "slug": "minewatcraft",
+    "title": "Minewatcraft",
+    "description": "애플워치용 마인크래프트 — 터치 조이스틱과 디지털 크라운으로 즐기는 3D 복셀 게임",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/minewatcraft",
+    "thumbnail": "/thumbs/minewatcraft.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-17T05:23:57Z"
+  },
+  {
+    "slug": "catch",
+    "title": "Catch",
+    "description": "카메라로 찍은 사물을 자동 누끼해 스티커로 만들고, 구슬처럼 중력으로 바닥에 쌓아 모으는 iPhone 앱",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/catch",
+    "thumbnail": "/thumbs/catch.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-16T11:16:45Z"
+  },
+  {
+    "slug": "jumpgo",
+    "title": "Jumpgo",
+    "description": "아이폰을 들고 실제로 점프하면 캐릭터가 점프하는 모션 컨트롤 지오메트리 대시 게임",
+    "platform": "web",
+    "demoUrl": "https://jumpgo.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/jumpgo",
+    "thumbnail": "/thumbs/jumpgo.png",
+    "tags": [
+      "HTML"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-15T06:44:44Z"
+  },
+  {
+    "slug": "toytoy",
+    "title": "Toytoy",
+    "description": "어릴 적 워터게임(물 채운 링토스 장난감 폰)을 SwiftUI+SpriteKit으로 아이폰에서 재현한 토이앱",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/toytoy",
+    "thumbnail": "/thumbs/toytoy.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-06-10T16:12:00Z"
+  },
+  {
+    "slug": "mineclift",
+    "title": "Mineclift",
+    "description": "터미널에서 플레이하는 3D 복셀 마인크래프트 게임 (Rust): 채굴·인벤토리·크리퍼/좀비·체력까지",
+    "platform": "other",
+    "repoUrl": "https://github.com/Gojaehyeon/mineclift",
+    "thumbnail": "/thumbs/mineclift.png",
+    "tags": [
+      "Rust"
+    ],
+    "featured": false,
+    "createdAt": "2026-06-10T08:31:21Z"
+  },
+  {
     "slug": "toycam",
     "title": "Toycam",
     "description": "아이폰 카메라를 실시간 픽셀아트 토이카메라로 바꿔주는 iOS 앱 (Metal 셰이더 · 픽셀화/색상양자화/디더링/흑백 · 슬라이더 조절)",
