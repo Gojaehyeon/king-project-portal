@@ -1,5 +1,152 @@
 [
   {
+    "slug": "nokialite",
+    "title": "Nokialite",
+    "description": "갤럭시 폴드를 2004년 애니콜 피처폰으로 바꾸는 런처 — 천지인 키패드, LCD 속 문자·카메라·유튜브·스네이크",
+    "platform": "other",
+    "repoUrl": "https://github.com/Gojaehyeon/nokialite",
+    "thumbnail": "/thumbs/nokialite.png",
+    "tags": [
+      "Kotlin"
+    ],
+    "featured": false,
+    "createdAt": "2026-08-25T08:45:08Z"
+  },
+  {
+    "slug": "pencil-dino",
+    "title": "Pencil Dino",
+    "description": "Apple Pencil 스퀴즈로 점프하는 iPad 러너 게임 — 800점부터 테슬라 변신 + 사이버펑크 모드",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/pencil-dino",
+    "thumbnail": "/thumbs/pencil-dino.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-08-20T06:53:25Z"
+  },
+  {
+    "slug": "icontrol",
+    "title": "Icontrol",
+    "description": "아이폰을 맥의 Wii 리모컨처럼 쓰는 모션 컨트롤러 앱 AirMote",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/icontrol",
+    "thumbnail": "/thumbs/icontrol.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-08-19T03:21:06Z"
+  },
+  {
+    "slug": "gesturedrop",
+    "title": "Gesturedrop",
+    "description": "카메라에 주먹을 쥐면 창이 빨려들어가고 손바닥을 펴면 다른 기기로 날아가는 맥↔아이패드 제스처 파일 전송 장난감",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/gesturedrop",
+    "thumbnail": "/thumbs/gesturedrop.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-08-10T11:31:21Z"
+  },
+  {
+    "slug": "hamsig-island",
+    "title": "Hamsig Island",
+    "description": "고양이 사진 2장으로 만든 닌텐도 DS 홈브류 횡스크롤 액션 게임 — 실기에서 도는 .nds ROM",
+    "platform": "other",
+    "repoUrl": "https://github.com/Gojaehyeon/hamsig-island",
+    "thumbnail": "/thumbs/hamsig-island.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-08-06T13:45:51Z"
+  },
+  {
+    "slug": "qrdrop",
+    "title": "QRDrop",
+    "description": "맥에서 파일을 드롭하면 QR 애니메이션으로 쏘고, 아이폰 카메라로 찍어서 받는 오프라인 파일 전송기",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/qrdrop",
+    "thumbnail": "/thumbs/qrdrop.png",
+    "tags": [
+      "swift",
+      "qr",
+      "fountain-code",
+      "airgap"
+    ],
+    "featured": false,
+    "createdAt": "2026-08-06T05:22:29Z"
+  },
+  {
+    "slug": "soundchat",
+    "title": "Soundchat",
+    "description": "초음파 소리로 근처 기기와 한 글자씩 주고받는 레트로 무전기 감성 채팅 앱",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/soundchat",
+    "thumbnail": "/thumbs/soundchat.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-08-03T10:09:40Z"
+  },
+  {
+    "slug": "todoplane",
+    "title": "Todoplane",
+    "description": "할 일을 적으면 비행기 탄 캐릭터가 배너 끌고 화면을 가로지르며 잔소리하는 킹받는 맥OS 앱",
+    "platform": "macos",
+    "repoUrl": "https://github.com/Gojaehyeon/todoplane",
+    "thumbnail": "/thumbs/todoplane.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-07-30T08:11:51Z"
+  },
+  {
+    "slug": "shaker",
+    "title": "Shaker",
+    "description": "흔들면 진짜 쉐이커처럼 소리 나는 아이폰 에그 쉐이커 앱",
+    "platform": "ios",
+    "demoUrl": "https://shaker.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/shaker",
+    "thumbnail": "/thumbs/shaker.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-07-30T01:48:35Z"
+  },
+  {
+    "slug": "cameratool",
+    "title": "CameraTool",
+    "description": "아이폰 카메라 컨트롤 버튼을 슬라이드해 화면을 건드리지 않고 책을 읽는 iOS 리더 앱",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/cameraTool",
+    "thumbnail": "/thumbs/cameratool.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-07-28T05:29:06Z"
+  },
+  {
+    "slug": "clockbook",
+    "title": "Clockbook",
+    "description": "소설 속 문장으로 시간을 알려주는 iPhone StandBy 문학 시계",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/clockbook",
+    "thumbnail": "/thumbs/clockbook.png",
+    "tags": [
+      "Swift"
+    ],
+    "featured": false,
+    "createdAt": "2026-07-03T07:20:17Z"
+  },
+  {
+    "slug": "ipingpong",
+    "title": "Ipingpong",
+    "description": "아이폰을 탁구채처럼 휘둘러 즐기는 three.js 웹 탁구 게임",
+    "platform": "web",
+    "demoUrl": "https://ipingpong.gojaehyun.com",
+    "repoUrl": "https://github.com/Gojaehyeon/ipingpong",
+    "thumbnail": "/thumbs/ipingpong.png",
+    "tags": [
+      "JavaScript"
+    ],
+    "featured": false,
+    "createdAt": "2026-07-01T09:55:24Z"
+  },
+  {
     "slug": "airdraw",
     "title": "Airdraw",
     "description": "아이폰 카메라로 종이를 비춰 참조 이미지를 겹쳐 따라 그리는 ARKit 트레이싱 앱",
