@@ -1,5 +1,16 @@
 [
   {
+    "slug": "foldjump",
+    "title": "Foldjump",
+    "description": "갤럭시 Z 폴드를 접을 때마다 애벌레가 점프하는 킹받는 게임 — 자이로로 접기 감지",
+    "platform": "other",
+    "repoUrl": "https://github.com/Gojaehyeon/foldjump",
+    "thumbnail": "/thumbs/foldjump.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-08-26T15:26:43Z"
+  },
+  {
     "slug": "nokialite",
     "title": "Nokialite",
     "description": "갤럭시 폴드를 2004년 애니콜 피처폰으로 바꾸는 런처 — 천지인 키패드, LCD 속 문자·카메라·유튜브·스네이크",
