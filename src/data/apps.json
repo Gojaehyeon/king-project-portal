@@ -3,10 +3,13 @@
     "slug": "foldjump",
     "title": "Foldjump",
     "description": "갤럭시 Z 폴드를 접을 때마다 애벌레가 점프하는 킹받는 게임 — 자이로로 접기 감지",
-    "platform": "other",
+    "platform": "web",
+    "demoUrl": "https://foldjump.gojaehyun.com",
     "repoUrl": "https://github.com/Gojaehyeon/foldjump",
     "thumbnail": "/thumbs/foldjump.png",
-    "tags": [],
+    "tags": [
+      "Kotlin"
+    ],
     "featured": false,
     "createdAt": "2026-08-26T15:26:43Z"
   },
