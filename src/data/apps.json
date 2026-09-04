@@ -1,5 +1,16 @@
 [
   {
+    "slug": "jsonwatch",
+    "title": "Jsonwatch",
+    "description": "코드 에디터 감성의 애플워치·아이폰 JSON 시계 — 시간·날씨·심박수를 Monokai 하이라이팅으로 보여주는 today.jason",
+    "platform": "ios",
+    "repoUrl": "https://github.com/Gojaehyeon/jsonwatch",
+    "thumbnail": "/thumbs/jsonwatch.png",
+    "tags": [],
+    "featured": false,
+    "createdAt": "2026-09-04T11:58:22Z"
+  },
+  {
     "slug": "foldjump",
     "title": "Foldjump",
     "description": "갤럭시 Z 폴드를 접을 때마다 애벌레가 점프하는 킹받는 게임 — 자이로로 접기 감지",
